@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>- Motherboard</title>
+    <link rel="stylesheet" href="motherboard.css">
+</head>
+<body>
+    <a href="index.html">
+        <div class="button-container">
+            <div class="change-button">Go to Internal</div>
+        </div>
+    </a>
+
+    <div class="internal-container">
+            <div class="content" style="display: none;">
+                <h4 id="title"></h4>
+                <p id="desc"></p>
+            </div>
+
+            <div class="border-right"></div>
+            <div class="border-left"></div>
+            <div class="keyboard-mouse-slot" onmouseenter="showContent(1)" onmouseleave="hideContent()">
+            </div>
+            <div class="usb-slot" onmouseenter="showContent(2)" onmouseleave="hideContent()">
+            </div>
+            <div class="parralel-port" onmouseenter="showContent(3)" onmouseleave="hideContent()">
+        
+            </div>
+            <div class="cpu-chip" onmouseenter="showContent(4)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="ram-slot" onmouseenter="showContent(5)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="floppy-controller" onmouseenter="showContent(6)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="ide-controller" onmouseenter="showContent(7)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="pci-slot" onmouseenter="showContent(8)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="isa-slot" onmouseenter="showContent(9)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="cmos-battery" onmouseenter="showContent(10)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="agp-slot" onmouseenter="showContent(11)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="cpu-slot" onmouseenter="showContent(12)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="power-supply-slot" onmouseenter="showContent(13)" onmouseleave="hideContent()">
+                
+            </div>
+            <div class="bios" onmouseenter="showContent(14)" onmouseleave="hideContent()">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="motherboard.js"></script>
+</body>
+</html>
