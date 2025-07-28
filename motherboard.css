@@ -1,159 +1,180 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    width: 100vw;
-    height: 100vh;
-    font-family: monospace;
-    font-size: 1.2rem;
-    color: #1B0DB1;
-    font-weight: 700;
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: monospace;
+  font-size: 1.2rem;
+  color: #1b0db1;
+  font-weight: 700;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.internal-container{
-    width: 50%;
-    height: 80%;
-    border: 4px solid black;
-    background-image: url('source/motherboard.png');
-    background-size: contain;
-    background-origin: content-box;
-    background-repeat: no-repeat;
-
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.keyboard-mouse-slot{
-    position: absolute;
-    top: 0%;
-    right: 1.5%;
-    width: 2.2rem;
-    height: 2.2rem;
-}
-.usb-slot{
-    position: absolute;
-    top: 0%;
-    right: 7.6%;
-    width: 2.4rem;
-    height: 2.6rem;
-}
-.parralel-port{
-    position: absolute;
-    top: 0%;
-    right: 15%;
-    width: 11rem;
-    height: 2.6rem;
-}
-.cpu-chip{
-    position: absolute;
-    top: 41.5%;
-    left: 65%;
-    width: 6rem;
-    height: 6rem;
-}
-.ram-slot{
-    position: absolute;
-    top: 62%;
-    left: 52%;
-    width: 24rem;
-    height: 6.5rem;
+.internal-container {
+  width: 50%;
+  height: 80%;
+  border: 4px solid black;
+  background-image: url("source/motherboard.png");
+  background-size: contain;
+  background-origin: content-box;
+  background-repeat: no-repeat;
+
+  position: relative;
 }
 
-.power-supply-slot{
-    position: absolute;
-    top: 80.2%;
-    left: 80%;
-    width: 9rem;
-    height: 2.2rem;
+.keyboard-mouse-slot {
+  position: absolute;
+  top: 0%;
+  right: 1.5%;
+  width: 2.2rem;
+  height: 2.2rem;
 }
-.pci-slot{
-    position: absolute;
-    top: 13.5%;
-    left: 3%;
-    width: 17rem;
-    height: 16rem;
+.usb-slot {
+  position: absolute;
+  top: 0%;
+  right: 7.6%;
+  width: 2.4rem;
+  height: 2.6rem;
 }
-.cmos-battery{
-    position: absolute;
-    top: 70%;
-    left: 1%;
-    width: 4rem;
-    height: 4rem;
+.parralel-port {
+  position: absolute;
+  top: 0%;
+  right: 15%;
+  width: 11rem;
+  height: 2.6rem;
 }
-.bios{
-    position: absolute;
-    top: 66%;
-    left: 12.5%;
-    width: 4rem;
-    height: 5rem;
+.cpu-chip {
+  position: absolute;
+  top: 41.5%;
+  left: 65%;
+  width: 6rem;
+  height: 6rem;
 }
-.agp-slot{
-    position: absolute;
-    top: 24%;
-    left: 37%;
-    width: 2rem;
-    height: 14rem;
-}
-.cpu-slot{
-    position: absolute;
-    top: 22%;
-    right: 5%;
-    width: 24rem;
-    height: 3rem;
-}
-.floppy-controller{
-    position: absolute;
-    bottom: 8%;
-    right: 39%;
-    width: 11rem;
-    height: 5rem;
-}
-.ide-controller{
-    position: absolute;
-    bottom: 2%;
-    right: 27%;
-    width: 10rem;
-    height: 2rem;
+.ram-slot {
+  position: absolute;
+  top: 62%;
+  left: 52%;
+  width: 24rem;
+  height: 6.5rem;
 }
 
-.button-container{
-    margin: 1rem;
-    display: flex;
-    justify-content: end;
-    
+.power-supply-slot {
+  position: absolute;
+  top: 80.2%;
+  left: 80%;
+  width: 9rem;
+  height: 2.2rem;
 }
-.change-button{
-    border: 1px solid black;
-    border-radius: .5rem;
-    padding: 0.5rem;
-    color: white;
-    background-color: cornflowerblue;
-    font-size: 1rem;
+.pci-slot {
+  position: absolute;
+  top: 13.5%;
+  left: 3%;
+  width: 17rem;
+  height: 16rem;
 }
-.change-button:hover{
-    cursor: pointer;
+.cmos-battery {
+  position: absolute;
+  top: 70%;
+  left: 1%;
+  width: 4rem;
+  height: 4rem;
+}
+.bios {
+  position: absolute;
+  top: 66%;
+  left: 12.5%;
+  width: 4rem;
+  height: 5rem;
+}
+.agp-slot {
+  position: absolute;
+  top: 24%;
+  left: 37%;
+  width: 2rem;
+  height: 14rem;
+}
+.cpu-slot {
+  position: absolute;
+  top: 22%;
+  right: 5%;
+  width: 24rem;
+  height: 3rem;
+}
+.floppy-controller {
+  position: absolute;
+  bottom: 8%;
+  right: 39%;
+  width: 11rem;
+  height: 5rem;
+}
+.ide-controller {
+  position: absolute;
+  bottom: 2%;
+  right: 27%;
+  width: 10rem;
+  height: 2rem;
 }
 
-.content{
-    position: absolute;
-    font-size: 1rem;
-    color: white;
-    background-color: black;
-    padding: 2rem;
-    width: 50%;
-    z-index: 5;
-    top: 40%;
-    left: 30%;
-    border-top-left-radius: 1.5rem;
-    border-bottom-right-radius: 1.5rem;
+.button-container {
+  margin: 1rem;
+  display: flex;
+  justify-content: end;
 }
-#title{
-    text-align: center;
-    padding: 1rem;
-    margin: 0;
+.change-button {
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  color: white;
+  background-color: cornflowerblue;
+  font-size: 1rem;
+}
+.change-button:hover {
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  font-size: 1rem;
+  color: white;
+  background-color: black;
+  padding: 2rem;
+  width: 50%;
+  z-index: 5;
+  top: 40%;
+  left: 30%;
+  border-top-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+#title {
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+@media (max-width: 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+  .internal-container {
+    height: 60%;
+  }
+}
+@media (max-width: 1200px) {
+  .internal-container {
+    height: 50%;
+  }
+}
+@media (max-width: 1440px) {
+  html {
+    font-size: 62.5%;
+  }
+  .internal-container {
+    height: 40%;
+  }
 }
